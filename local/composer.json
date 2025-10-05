@@ -1,0 +1,12 @@
+{
+  "require": {
+    "guzzlehttp/guzzle": "^7.10",
+    "halaxa/json-machine": "^1.2",
+    "predis/predis": "^3.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "BxJsonCli\\BxJsonCli\\Cli\\Command\\Parser\\Service\\": "modules/bxjsoncli.bxjsoncli/lib/cli/command/parser/service/"
+    }
+  }
+}
