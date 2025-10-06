@@ -112,7 +112,7 @@ php bitrix.php bxjsoncli:parse-json --local-file=/path/to/local.json --redis-hos
 php bitrix.php bxjsoncli:get-items --redis-key=my_items
 ```
 
-Получение элементов 10-19 из пользовательского Redis:
+Получение элементов 10-19 с пользовательскими настройками Redis:
 
 ```
 php bitrix.php bxjsoncli:get-items --redis-host=redis.example.com --redis-port=6380 --redis-key=my_items --start=10 --end=19
@@ -156,7 +156,7 @@ php bitrix.php bxjsoncli:get-items-by-key comment --redis-host=localhost --redis
 
 **Примеры:**
 
-Подсчет элементов в ключе по умолчанию:
+Число элементов в ключе по умолчанию:
 
 ```
 php bitrix.php bxjsoncli:items-count --redis-key=my_items
@@ -164,7 +164,7 @@ php bitrix.php bxjsoncli:items-count --redis-key=my_items
 
 Вывод: "Count of items in 'my_items': 30"
 
-Подсчет с пользовательским Redis:
+Число элементов с пользовательскими настройками Redis:
 
 ```
 php bitrix.php bxjsoncli:items-count --redis-host=localhost --redis-port=6379 --redis-key=custom_items
