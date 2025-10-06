@@ -174,7 +174,7 @@ php bitrix.php bxjsoncli:items-count --redis-host=localhost --redis-port=6379 --
 
 ## API-методы
 
-Класс `ParserApiService` предоставляет PHP-методы для программного доступа к хранимым данным. Создайте экземпляр в своих скриптах (например, через `new ParserApiService()` после `require autoload`).
+Класс `ParserApiService` предоставляет PHP-методы для программного доступа к хранимым данным.
 
 ### getItems
 
