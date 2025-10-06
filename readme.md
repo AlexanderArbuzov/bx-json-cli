@@ -140,7 +140,7 @@ php bitrix.php bxjsoncli:get-items --redis-host=redis.example.com --redis-port=6
 php bitrix.php bxjsoncli:get-items-by-key title --redis-key=my_items
 ```
 
-Извлечение вложенного `comment` из элементов 0-9 с пользовательским Redis:
+Извлечение вложенного `comment` из элементов 0-9 с пользовательскими настройками Redis:
 
 ```
 php bitrix.php bxjsoncli:get-items-by-key comment --redis-host=localhost --redis-port=6379 --redis-key=my_items --start=0 --end=9
@@ -174,7 +174,7 @@ php bitrix.php bxjsoncli:items-count --redis-host=localhost --redis-port=6379 --
 
 ## API-методы
 
-Класс `ParserApiService` предоставляет PHP-методы для программного доступа к хранимым данным.
+Класс `ParserApiService` предоставляет методы для доступа к хранимым данным на уровне кода.
 
 ### getItems
 
