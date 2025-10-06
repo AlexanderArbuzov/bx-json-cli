@@ -25,6 +25,7 @@ class ParseJsonCommand extends Command
         $defaultPort = $config['value']['redis']['port'] ?? 6379;
         $defaultKey = $config['value']['default_keys']['items_key'] ?? 'items';
         $completeKey = $config['value']['default_keys']['parsing_complete'] ?? 'parsing_complete';
+        $defaultPointer = $config['value']['json']['default_pointer'] ?? '';
 
         $this
             ->setName('bxjsoncli:parse-json')
@@ -35,7 +36,7 @@ class ParseJsonCommand extends Command
             ->addOption('redis-port', null, InputOption::VALUE_OPTIONAL, 'Redis port', $defaultPort)
             ->addOption('redis-key', null, InputOption::VALUE_OPTIONAL, 'Redis key to store the list of items', $defaultKey)
             ->addOption('complete-key', null, InputOption::VALUE_OPTIONAL, 'Redis key for completion flag', $completeKey)
-            ->addOption('json-pointer', null, InputOption::VALUE_OPTIONAL, 'JSON pointer to the array of items', '');
+            ->addOption('json-pointer', null, InputOption::VALUE_OPTIONAL, 'JSON pointer to the array of items', $defaultPointer);
     }
 
     protected function execute(InputInterface $input, OutputInterface $output)
